@@ -16,3 +16,7 @@ menuBtn.addEventListener("click", () => {
 function toggleMenu(e) {
   e.name = e.name === "menu" ? "close" : "menu";
 }
+
+function heartToggle(heart) {
+  heart.name = heart.name === "heart-outline" ? "heart" : "heart-outline";
+}
