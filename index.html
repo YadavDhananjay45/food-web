@@ -20,15 +20,15 @@
           <span class="text-gray-800 text-3xl font-semibold">Food-</span>
           <span class="text-red-600 text-3xl font-semibold">Web</span>
         </div>
-        <div class="menudiv hidden md:block p-4">
+        <div class="menudiv hidden lg:block p-4 lg:p-0">
           <ul
-            class="absolute bg-white w-1/2 flex flex-col gap-6 text-center left-[25%] top-[4.5rem] md:flex-row md:static md:gap-4 rounded-md p-2"
+            class="absolute bg-white w-1/2 flex flex-col gap-6 text-center left-[25%] top-[4.5rem] lg:flex-row lg:static lg:gap-4 rounded-md p-2 lg:bg-transparent"
           >
             <li><a class="font-semibold text-gray-700" href="#">HOME</a></li>
             <li><a class="text-gray-700" href="#">SPECIALITY</a></li>
             <li><a class="text-gray-700" href="#">MENU</a></li>
             <li><a class="text-gray-700" href="#">TESTIMONIAL</a></li>
-            <li><a class="text-gray-700" href="#">CONTACT US</a></li>
+            <li><a class="text-gray-700" href="#">CONTACT</a></li>
           </ul>
         </div>
         <div class="icon-div flex gap-3 p-3 items-center justify-center">
@@ -36,7 +36,7 @@
             <ion-icon name="search-outline" class="text-xl"></ion-icon>
           </div>
           <div><ion-icon name="cart-outline" class="text-xl"></ion-icon></div>
-          <div class="hamburger md:hidden">
+          <div class="hamburger lg:hidden">
             <ion-icon
               onclick="toggleMenu(this)"
               name="menu"
@@ -115,16 +115,20 @@
                   </div>
                 </div>
                 <div class="flex justify-center">
-                  <img class="w-[50vw]" src="/pizza_img.png" alt="" />
+                  <img
+                    class="w-[50vw] md:w-[100vw]"
+                    src="/pizza_img.png"
+                    alt=""
+                  />
                 </div>
-                <div class="font-semibold text-center">
+                <div class="font-semibold text-center md:mt-6">
                   New York-style Pizza
                 </div>
                 <div class="text-gray-500 p-2 text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
                   corrupti.
                 </div>
-                <div class="flex justify-between items-center">
+                <div class="flex justify-between items-center md:mt-5">
                   <div class="font-bold">$7.10</div>
                   <button
                     class="bg-red-600 rounded-xl p-2 text-white font-semibold"
@@ -156,12 +160,14 @@
                     alt=""
                   />
                 </div>
-                <div class="font-semibold text-center">Bento Ekiben Ramen</div>
+                <div class="font-semibold text-center md:mt-9">
+                  Bento Ekiben Ramen
+                </div>
                 <div class="text-gray-500 p-2 text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
                   corrupti.
                 </div>
-                <div class="flex justify-between items-center">
+                <div class="flex justify-between items-center md:mt-6">
                   <div class="font-bold">$6.50</div>
                   <button
                     class="bg-red-600 rounded-xl p-2 text-white font-semibold"
@@ -292,14 +298,16 @@
                   </div>
                 </div>
                 <div class="flex justify-center">
-                  <img class="w-[50vw]" src="/fish_img.png" alt="" />
+                  <img class="w-[50vw] md:mt-6" src="/fish_img.png" alt="" />
                 </div>
-                <div class="font-semibold text-center">Fish Fry Shashlik</div>
+                <div class="font-semibold text-center md:mt-6">
+                  Fish Fry Shashlik
+                </div>
                 <div class="text-gray-500 p-2 text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
                   corrupti.
                 </div>
-                <div class="flex justify-between items-center mt-8">
+                <div class="flex justify-between items-center mt-8 md:mt-20">
                   <div class="font-bold">$6.50</div>
                   <button
                     class="bg-red-600 rounded-xl p-2 text-white font-semibold"
@@ -333,7 +341,7 @@
         </div>
       </section>
       <section>
-        <div>
+        <div class="mt-10">
           <div class="text-center">
             <span class="font-bold text-4xl">Chief special</span>
             <span class="font-bold text-4xl text-red-600">Recipies</span>
@@ -468,71 +476,73 @@
             </div>
           </div>
         </div>
-        <div class="bg-white p-4 mx-8 rounded-lg">
-          <div class="flex flex-col justify-center items-center">
-            <div class="w-10">
-              <img class="rounded-[50%]" src="./public/person1.jpg" alt="" />
-            </div>
-            <div class="font-bold">Stuart Bell</div>
-            <div>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-            </div>
-            <div class="text-center p-5">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              laudantium natus quasi atque! Sapiente earum nesciunt placeat
-              nulla distinctio commodi"
-            </div>
-          </div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="bg-white p-4 mx-8 rounded-lg mt-4">
-          <div class="flex flex-col justify-center items-center">
-            <div class="w-12">
-              <img class="rounded-[50%]" src="./public/person2.jpg" alt="" />
-            </div>
-            <div class="font-bold">Lucy Adams</div>
-            <div>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-            </div>
-            <div class="text-center p-5">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              laudantium natus quasi atque! Sapiente earum nesciunt placeat
-              nulla distinctio commodi"
+        <div
+          class="flex flex-col justify-center items-center gap-6 mx-6 md:flex-row"
+        >
+          <div class="bg-white p-4 mx-8 rounded-lg md:mx-0 md:p-2">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-10">
+                <img class="rounded-[50%]" src="./public/person1.jpg" alt="" />
+              </div>
+              <div class="font-bold">Stuart Bell</div>
+              <div>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+              </div>
+              <div class="text-center p-5">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                laudantium natus quasi atque! Sapiente earum nesciunt placeat
+                nulla distinctio commodi"
+              </div>
             </div>
           </div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="bg-white p-4 mx-8 rounded-lg mt-4">
-          <div class="flex flex-col justify-center items-center">
-            <div class="w-12">
-              <img class="rounded-[50%]" src="./public/person3.jpg" alt="" />
+          <div class="bg-white p-4 mx-8 rounded-lg md:mx-0 md:p-2">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-12">
+                <img class="rounded-[50%]" src="./public/person2.jpg" alt="" />
+              </div>
+              <div class="font-bold">Lucy Adams</div>
+              <div>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+              </div>
+              <div class="text-center p-5">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                laudantium natus quasi atque! Sapiente earum nesciunt placeat
+                nulla distinctio commodi"
+              </div>
             </div>
-            <div class="font-bold">Jimmy Jordan</div>
-            <div>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-              <ion-icon class="text-red-600" name="star"></ion-icon>
-            </div>
-            <div class="text-center p-5">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              laudantium natus quasi atque! Sapiente earum nesciunt placeat
-              nulla distinctio commodi"
-            </div>
+            <div></div>
+            <div></div>
           </div>
-          <div></div>
-          <div></div>
+          <div class="bg-white p-4 mx-8 rounded-lg md:mx-0 md:p-2">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-11">
+                <img class="rounded-[50%]" src="./public/person3.jpg" alt="" />
+              </div>
+              <div class="font-bold">Jimmy Jordan</div>
+              <div>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+                <ion-icon class="text-red-600" name="star"></ion-icon>
+              </div>
+              <div class="text-center p-5">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                laudantium natus quasi atque! Sapiente earum nesciunt placeat
+                nulla distinctio commodi"
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </section>
     </main>
